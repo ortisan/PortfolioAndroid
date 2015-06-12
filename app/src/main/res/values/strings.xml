@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="title_activity_devices_info">DevicesInfoActivity</string>
+    <string name="label_device_name">Nome do dispositivo:</string>
+    <string name="label_device_version">Versão:</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_apps">AppsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_grid_view_example">GridViewExample</string>
+    <string name="title_activity_horiz_slider_view_example">Horizontal Slider Example</string>
+    <string name="title_activity_recicle_view_example">RecicleViewExampleActivity</string>
+</resources>
