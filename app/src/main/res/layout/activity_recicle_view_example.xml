@@ -1,79 +1,37 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relative_recycler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ortiz.com.br.portfolio.activity.RecicleViewExampleActivity">
 
 
-    <Button
-        android:id="@+id/bt_left"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="PREV" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_lista_apps_destaques"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle"
-        android:layout_width="200dp"
+        android:id="@+id/recycler_lista_apps"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bt_left"
-        android:scrollbars="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="vertical"
         android:textAlignment="center" />
 
 
-    <Button
-        android:id="@+id/bt_right"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/recycle"
-        android:text="NEXT" />
-
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content">-->
-
-    <!--<android.support.v7.widget.RecyclerView-->
-    <!--android:id="@+id/recycle_123"-->
-    <!--android:layout_width="200dp"-->
-    <!--android:layout_height="wrap_content"-->
-
-    <!--android:scrollbars="vertical"-->
-    <!--android:textAlignment="center">-->
-
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content">-->
-
-    <!--<ImageView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@drawable/lara" />-->
-
-    <!--<ImageView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@drawable/lara" />-->
-
-    <!--<ImageView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@drawable/lara" />-->
-
-    <!--<ImageView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@drawable/lara" />-->
-
-    <!--</LinearLayout>-->
-
-
-    <!--</android.support.v7.widget.RecyclerView>-->
-
-
-    <!--</LinearLayout>-->
-
-</RelativeLayout>
+</LinearLayout>

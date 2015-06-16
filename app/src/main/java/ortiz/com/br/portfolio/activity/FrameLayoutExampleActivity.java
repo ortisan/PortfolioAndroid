@@ -47,8 +47,8 @@ public class FrameLayoutExampleActivity extends ActionBarActivity {
                 xTranslation  = -200f;
                 image.setImageResource(apps.get(idxSelected).getImagem());
                 esconderBotoes();
-                //selecionarImagem();
-                selecionarImagemTranslation();
+                selecionarImagem();
+                //selecionarImagemTranslation();
             }
         });
 
@@ -58,16 +58,16 @@ public class FrameLayoutExampleActivity extends ActionBarActivity {
                 idxSelected++;
                 xTranslation  = 200f;
                 esconderBotoes();
-                //selecionarImagem();
-                selecionarImagemTranslation();
+                selecionarImagem();
+                //selecionarImagemTranslation();
 
 
             }
         });
 
         esconderBotoes();
-        //selecionarImagem();
-        selecionarImagemTranslation();
+        selecionarImagem();
+        //selecionarImagemTranslation();
     }
 
     private void esconderBotoes() {
