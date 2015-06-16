@@ -27,7 +27,6 @@ public class RecicleViewExampleActivity extends Activity {
         recyclerView.setHasFixedSize(true);
         populateApps();
 
-        //LinearLayoutManager layoutManager = new MyLinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.app_item_vertical));
@@ -37,7 +36,7 @@ public class RecicleViewExampleActivity extends Activity {
         final RecyclerView recyclerView2 = (RecyclerView) findViewById(R.id.recycler_lista_apps);
         recyclerView2.setHasFixedSize(true);
 
-        //LinearLayoutManager layoutManager = new MyLinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
+
         LinearLayoutManager layoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true);
         recyclerView2.setLayoutManager(layoutManager2);
         recyclerView2.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.app_item_horizontal));

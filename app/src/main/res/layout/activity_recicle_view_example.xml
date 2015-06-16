@@ -7,11 +7,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ortiz.com.br.portfolio.activity.RecicleViewExampleActivity">
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_lista_apps_destaques"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="150dp"
         android:layout_gravity="center_horizontal|center_vertical"
         android:paddingLeft="1dp"
         android:paddingRight="1dp"

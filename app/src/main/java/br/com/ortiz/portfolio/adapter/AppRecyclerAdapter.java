@@ -37,12 +37,8 @@ public class AppRecyclerAdapter extends RecyclerView.Adapter<AppViewHolder> {
     public void onBindViewHolder(AppViewHolder imageViewHolder, int i) {
         App app = this.apps.get(i);
         imageViewHolder.getName().setText(app.getNome());
-
         ImageView imageView = imageViewHolder.getImage();
-
         imageViewHolder.getImage().setImageResource(app.getImagem());
-        //imageView.setMaxHeight(100);
-        //imageView.setMaxWidth(100);
     }
 
 

@@ -5,4 +5,15 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="appRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+        <item name="android:scaleHeight">20%</item>
+        <item name="android:scaleWidth">20%</item>
+
+
+    </style>
+
+
 </resources>
