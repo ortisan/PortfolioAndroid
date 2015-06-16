@@ -10,4 +10,6 @@
     <string name="title_activity_grid_view_example">GridViewExample</string>
     <string name="title_activity_horiz_slider_view_example">Horizontal Slider Example</string>
     <string name="title_activity_recicle_view_example">RecicleViewExampleActivity</string>
+    <string name="title_activity_app_details">AppDetails</string>
+    <string name="title_activity_frame_layout_example">FrameLayoutExampleActivity</string>
 </resources>

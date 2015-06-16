@@ -13,24 +13,35 @@
         android:id="@+id/botao_info_dispositivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Info. Dispositivo" />
 
     <Button
         android:id="@+id/botao_exemplo_grid_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Exemplo GridView" />
 
     <Button
         android:id="@+id/botao_exemplo_horizontal_scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Exemplo Horiz. Scroll" />
+
+    <Button
+        android:id="@+id/botao_exemplo_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Exemplo Frame Layout" />
 
     <Button
         android:id="@+id/botao_exemplo_recycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Exemplo Recycle" />
 
 </LinearLayout>

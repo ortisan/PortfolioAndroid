@@ -21,15 +21,19 @@
         </activity>
         <activity
             android:name=".activity.GridViewExampleActivity"
-            android:label="@string/title_activity_grid_view_example" >
-        </activity>
+            android:label="@string/title_activity_grid_view_example" />
         <activity
             android:name=".activity.HorizScrollViewExampleActivity"
-            android:label="@string/title_activity_horiz_slider_view_example" >
-        </activity>
+            android:label="@string/title_activity_horiz_slider_view_example" />
         <activity
             android:name=".activity.RecicleViewExampleActivity"
-            android:label="@string/title_activity_recicle_view_example" >
+            android:label="@string/title_activity_recicle_view_example" />
+        <activity
+            android:name=".activity.AppDetails"
+            android:label="@string/title_activity_app_details" />
+        <activity
+            android:name=".activity.FrameLayoutExampleActivity"
+            android:label="@string/title_activity_frame_layout_example" >
         </activity>
     </application>
 

@@ -45,8 +45,11 @@ public class AppRecyclerAdapter extends RecyclerView.Adapter<AppViewHolder> {
         //imageView.setMaxWidth(100);
     }
 
+
     @Override
     public int getItemCount() {
         return this.apps.size();
     }
+
+
 }

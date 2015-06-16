@@ -1,6 +1,7 @@
 package br.com.ortiz.portfolio.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import ortiz.com.br.portfolio.R;
+import ortiz.com.br.portfolio.activity.AppDetails;
 
 /**
  * Created by marcelo on 12/06/15.
@@ -24,6 +26,7 @@ public class AppViewHolder extends RecyclerView.ViewHolder implements View.OnCli
         this.context = context;
         this.name = (TextView) itemView.findViewById(R.id.name_item);
         this.image = (ImageView) itemView.findViewById(R.id.image_item);
+        itemView.setOnClickListener(this);
 
     }
 
@@ -55,6 +58,7 @@ public class AppViewHolder extends RecyclerView.ViewHolder implements View.OnCli
 
     @Override
     public void onClick(View view) {
-        Toast.makeText(this.context, name.getText().toString(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this.context, AppDetails.class);
+        this.context.startActivity(intent);
     }
 }

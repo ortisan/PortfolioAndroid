@@ -44,6 +44,15 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button botaoFrameLayout = (Button) findViewById(R.id.botao_exemplo_frame_layout);
+        botaoFrameLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FrameLayoutExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button botaoRecycle = (Button) findViewById(R.id.botao_exemplo_recycle);
         botaoRecycle.setOnClickListener(new View.OnClickListener() {
             @Override
