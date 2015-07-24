@@ -15,11 +15,7 @@ public class HorizScrollViewExampleActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.activity_horiz_scroll_view_example2);
-
-        setContentView(R.layout.activity_horiz_scroll_view_example2);
-
-
+        setContentView(R.layout.activity_horiz_scroll_view_example2_layout);
         ListView gridView = (ListView) findViewById(R.id.list_apps);
         gridView.setAdapter(new ImageAdapter(this));
         gridView.setHorizontalScrollBarEnabled(true);

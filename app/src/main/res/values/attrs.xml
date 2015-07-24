@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MinhaView">
+        <attr name="showT" format="boolean"></attr>
+        <attr name="text" format="string"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="OrtizParallaxScrollView">
+        <attr name="xpto" format="boolean" />
+    </declare-styleable>
+
+
+</resources>

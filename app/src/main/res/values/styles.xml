@@ -1,19 +1,37 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/light_blue_A100</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/light_blue_A700</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/pink_50</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <item name="android:buttonStyle">@style/buttonStyle</item>
     </style>
 
 
-    <style name="appRatingBar" parent="@android:style/Widget.RatingBar">
+    <style name="buttonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/green_A700</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="appRatingBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:minHeight">12dip</item>
         <item name="android:maxHeight">12dip</item>
         <item name="android:scaleHeight">20%</item>
         <item name="android:scaleWidth">20%</item>
-
-
     </style>
+
+
 
 
 </resources>

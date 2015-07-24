@@ -21,7 +21,7 @@ public class RecicleViewExampleActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recicle_view_example);
+        setContentView(R.layout.activity_recicle_view_example_layout);
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_lista_apps_destaques);
         recyclerView.setHasFixedSize(true);
@@ -29,7 +29,7 @@ public class RecicleViewExampleActivity extends Activity {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.app_item_vertical));
+        recyclerView.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.item_app_col));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL_LIST));
 
@@ -39,7 +39,7 @@ public class RecicleViewExampleActivity extends Activity {
 
         LinearLayoutManager layoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true);
         recyclerView2.setLayoutManager(layoutManager2);
-        recyclerView2.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.app_item_horizontal));
+        recyclerView2.setAdapter(new AppRecyclerAdapter(this, this.apps, R.layout.item_app_row));
         recyclerView2.setItemAnimator(new DefaultItemAnimator());
         recyclerView2.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
     }
@@ -58,6 +58,4 @@ public class RecicleViewExampleActivity extends Activity {
         this.apps.add(new App("Carros", R.drawable.carro));
         this.apps.add(new App("Invasion", R.drawable.invasion));
     }
-
-
 }

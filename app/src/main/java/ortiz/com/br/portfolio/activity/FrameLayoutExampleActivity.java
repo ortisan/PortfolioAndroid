@@ -33,7 +33,7 @@ public class FrameLayoutExampleActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_frame_layout_example);
+        setContentView(R.layout.activity_frame_layout_example_layout);
         this.image = (ImageView) findViewById(R.id.image_frame_layout);
         this.botaoEsquerda = (ImageButton) findViewById(R.id.botao_esquerda_frame_layout);
         this.botaoDireita = (ImageButton) findViewById(R.id.botao_direita_frame_layout);

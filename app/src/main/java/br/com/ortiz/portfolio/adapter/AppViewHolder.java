@@ -6,10 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import ortiz.com.br.portfolio.R;
-import ortiz.com.br.portfolio.activity.AppDetails;
+import ortiz.com.br.portfolio.activity.AppDetailsActivity;
 
 /**
  * Created by marcelo on 12/06/15.
@@ -58,7 +57,7 @@ public class AppViewHolder extends RecyclerView.ViewHolder implements View.OnCli
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(this.context, AppDetails.class);
+        Intent intent = new Intent(this.context, AppDetailsActivity.class);
         this.context.startActivity(intent);
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Texto1" />
+
+    <br.com.ortiz.view.MinhaView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        custom:showT="true"
+        custom:text="ABC123" />
+
+
+</LinearLayout>

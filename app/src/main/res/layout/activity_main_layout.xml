@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+    tools:context="ortiz.com.br.portfolio.activity.MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar_main_layout"></include>
+
+        <Button
+            android:id="@+id/botao_info_dispositivo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Info. Dispositivo" />
+
+        <Button
+            android:id="@+id/botao_exemplo_grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo GridView" />
+
+        <Button
+            android:id="@+id/botao_exemplo_horizontal_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo Horiz. Scroll" />
+
+        <Button
+            android:id="@+id/botao_exemplo_frame_layout"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo Frame Layout" />
+
+        <Button
+            android:id="@+id/botao_exemplo_recycle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Exemplo Recycle" />
+
+        <Button
+            android:id="@+id/botao_exemplo_cards"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo Cards" />
+
+        <Button
+            android:id="@+id/botao_exemplo_custom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo Custom View" />
+
+        <Button
+            android:id="@+id/botao_exemplo_store"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exemplo store" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_lista_menu_drawer"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>

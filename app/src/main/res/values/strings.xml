@@ -12,4 +12,14 @@
     <string name="title_activity_recicle_view_example">RecicleViewExampleActivity</string>
     <string name="title_activity_app_details">AppDetails</string>
     <string name="title_activity_frame_layout_example">FrameLayoutExampleActivity</string>
+    <string name="title_activity_recycler_with_parallax">RecyclerWithParallax</string>
+    <string name="title_activity_cards_example">CardsExampleActivity</string>
+
+    <string name="title_activity_custom_view_example">CustomViewExample</string>
+
+    <string name="title_activity_store_example">StoreExample</string>
+
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
+
 </resources>

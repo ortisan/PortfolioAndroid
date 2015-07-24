@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+<br.com.ortiz.view.OrtizParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:id="@+id/scroll_category"
+    app:parallax_factor="1.9" app:alpha_factor="2.0">
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <br.com.ortiz.portfolio.view.ExpandableHeightGridView
+        android:id="@+id/category_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:columnWidth="150dp"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></br.com.ortiz.portfolio.view.ExpandableHeightGridView>
+
+
+</LinearLayout><!--
+    </br.com.ortiz.view.OrtizParallaxScrollView>-->
