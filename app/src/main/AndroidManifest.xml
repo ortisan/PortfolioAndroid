@@ -43,6 +43,16 @@
         <activity
             android:name=".activity.StoreExampleActivity"
             android:label="@string/title_activity_store_example"></activity>
+
+        <activity
+            android:name=".activity.DesignWidgetExampleActivity"
+            android:label="@string/title_activity_design_widgets"></activity>
+
+        <activity
+            android:name=".activity.DaggerTestsActivity"
+            android:label="Exemplo Dagger"></activity>
+
+
     </application>
 
 </manifest>

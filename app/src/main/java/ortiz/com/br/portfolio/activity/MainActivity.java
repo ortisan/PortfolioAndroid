@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -15,28 +16,33 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import br.com.ortiz.portfolio.adapter.MyAdapter;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import ortiz.com.br.portfolio.R;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private String[] titlesRow = {"Buscar", "Compartilhar"};
     private int[] iconsRow = {R.drawable.ic_search, R.drawable.ic_share};
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private Toolbar mToolbar;
-    private RecyclerView mRecyclerView;
-    private LinearLayoutManager mLayoutManager;
+    @Bind(R.id.tool_bar)
+    Toolbar mToolbar;
+    @Bind(R.id.recycler_lista_menu_drawer)
+    RecyclerView mRecyclerView;
+    LinearLayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main_layout);
-        mToolbar = (Toolbar) findViewById(R.id.tool_bar);
+
+        ButterKnife.bind(this);
+
         setSupportActionBar(mToolbar);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_lista_menu_drawer);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setAdapter(new MyAdapter(titlesRow, iconsRow));
         mLayoutManager = new LinearLayoutManager(this);
@@ -131,6 +137,26 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+
+        Button botaoDesignWidgets = (Button) findViewById(R.id.botao_design_widget);
+        botaoDesignWidgets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DesignWidgetExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button botaoDagger = (Button) findViewById(R.id.botao_dagger);
+        botaoDagger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DaggerTestsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
