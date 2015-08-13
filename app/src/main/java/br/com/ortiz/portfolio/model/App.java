@@ -11,6 +11,8 @@ public class App implements Serializable {
 
     private int imagem;
 
+    private String imagemStr;
+
 
     public App() {
     }
@@ -39,5 +41,11 @@ public class App implements Serializable {
         this.imagem = imagem;
     }
 
+    public String getImagemStr() {
+        return imagemStr;
+    }
 
+    public void setImagemStr(String imagemStr) {
+        this.imagemStr = imagemStr;
+    }
 }

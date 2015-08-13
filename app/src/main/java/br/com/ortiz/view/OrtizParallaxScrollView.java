@@ -48,14 +48,6 @@ public class OrtizParallaxScrollView extends ScrollView {
     }
 
 
-
-    /*
-    protected void onFinishInflate() {
-        super.onFinishInflate();
-        this.makeViewsParallax();
-    }
-    */
-
     public OrtizParallaxScrollView(Context context) {
         super(context);
     }

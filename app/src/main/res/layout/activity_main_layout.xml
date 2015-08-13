@@ -85,6 +85,18 @@
                 android:layout_height="wrap_content"
                 android:text="Exemplo Dagger" />
 
+            <Button
+                android:id="@+id/botao_draw_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Exemplo Draw View" />
+
+            <Button
+                android:id="@+id/botao_inicializacao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Exemplo Software Completo" />
+
         </LinearLayout>
 
     </ScrollView>

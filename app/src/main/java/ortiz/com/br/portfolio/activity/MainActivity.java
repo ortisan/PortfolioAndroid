@@ -3,9 +3,7 @@ package ortiz.com.br.portfolio.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -18,19 +16,24 @@ import android.widget.Toast;
 import br.com.ortiz.portfolio.adapter.MyAdapter;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import ortiz.com.br.portfolio.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private String[] titlesRow = {"Buscar", "Compartilhar"};
     private int[] iconsRow = {R.drawable.ic_search, R.drawable.ic_share};
-
     private ActionBarDrawerToggle mDrawerToggle;
 
     @Bind(R.id.tool_bar)
     Toolbar mToolbar;
     @Bind(R.id.recycler_lista_menu_drawer)
     RecyclerView mRecyclerView;
+    @Bind(R.id.botao_dagger)
+    Button mBotaoDaggger;
+    @Bind(R.id.botao_draw_view)
+    Button mBotaoDraw;
+
     LinearLayoutManager mLayoutManager;
 
     @Override
@@ -146,17 +149,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        Button botaoDagger = (Button) findViewById(R.id.botao_dagger);
-        botaoDagger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DaggerTestsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 
     @Override
@@ -189,5 +181,21 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show();
         return result;
+    }
+
+
+    @OnClick(R.id.botao_dagger)
+    void navigateDaggerExample() {
+        this.navigator.navigateToDaggerExample(this);
+    }
+
+    @OnClick(R.id.botao_draw_view)
+    void navigateDrawExample() {
+        this.navigator.navigateToDrawExample(this);
+    }
+
+    @OnClick(R.id.botao_inicializacao)
+    void navigateInicializacao() {
+        this.navigator.navigateToInicializacao(this);
     }
 }

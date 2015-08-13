@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ortiz.com.br.portfolio">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name="br.com.ortiz.portfolio.PortfolioApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.MyTheme">
+
+
         <activity
             android:name=".activity.DevicesInfoActivity"
             android:label="@string/title_activity_devices_info" />
@@ -51,6 +56,18 @@
         <activity
             android:name=".activity.DaggerTestsActivity"
             android:label="Exemplo Dagger"></activity>
+
+        <activity
+            android:name=".activity.DrawActivity"
+            android:label="Exemplo Drawer"></activity>
+
+        <activity
+            android:name=".activity.InicializacaoActivity"
+            android:label="Inicialização"></activity>
+
+        <activity
+            android:name=".activity.ListaAppsActivity"
+            android:label="Lista de Aplicativos"></activity>
 
 
     </application>
